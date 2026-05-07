@@ -1,6 +1,6 @@
 <?php
-require_once "app/config/db.php";
-require_once "app/middleware/auth.php";
+require_once __DIR__ . "/app/config/db.php";
+require_once __DIR__ . "/app/middleware/auth.php";
 
 $user_id   = $_SESSION['user_id'];
 $user_name = $_SESSION['user_name'];

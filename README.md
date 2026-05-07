@@ -2,6 +2,10 @@
 
 Este proyecto es una **prueba técnica** desarrollada en PHP puro como parte de un proceso de selección para desarrollador junior.
 
+## Demo
+
+https://prueba-tecnica-junior-php.vercel.app/
+
 ## Stack
 
 - PHP (sin frameworks)
