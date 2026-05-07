@@ -16,7 +16,7 @@ https://prueba-tecnica-junior-php.vercel.app/
 ## Stack
 
 - PHP (sin frameworks)
-- MySQL / MariaDB
+- MySQL
 - Bootstrap 5 + SweetAlert2
 - Vercel (deploy) + Railway (base de datos)
 
