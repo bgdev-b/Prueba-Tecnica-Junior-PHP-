@@ -1,7 +1,7 @@
 <?php
 ob_start();
-session_start();
 require_once __DIR__ . "/../app/config/db.php";
+session_start();
 require_once __DIR__ . "/../app/middleware/auth.php";
 ob_end_clean();
 

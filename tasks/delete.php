@@ -1,6 +1,6 @@
 <?php
-session_start();
 require_once __DIR__ . "/../app/config/db.php";
+session_start();
 require_once __DIR__ . "/../app/middleware/auth.php";
 
 header('Content-Type: application/json');

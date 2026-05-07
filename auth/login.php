@@ -20,6 +20,7 @@ if (isset($_POST['login'])) {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_name'] = $user['name'];
+            session_write_close();
             header("Location: /dashboard.php");
             exit();
         }
