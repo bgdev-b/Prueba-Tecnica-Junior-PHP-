@@ -3,6 +3,10 @@
         {
             "src": "**/*.php",
             "use": "vercel-php@0.7.2"
+        },
+        {
+            "src": "assets/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
@@ -37,6 +41,22 @@
         {
             "src": "/tasks/toggle",
             "dest": "/tasks/toggle.php"
+        },
+        {
+            "src": "/assets/(.*)",
+            "dest": "/assets/$1"
         }
     ]
+}
+            "dest": "/tasks/add.php"
+},
+{
+"src": "/tasks/delete",
+"dest": "/tasks/delete.php"
+},
+{
+"src": "/tasks/toggle",
+"dest": "/tasks/toggle.php"
+}
+]
 }

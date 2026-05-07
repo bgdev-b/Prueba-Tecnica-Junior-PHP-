@@ -1,8 +1,8 @@
 <?php
 ob_start();
 session_start();
-require_once "../config/db.php";
-require_once "../middleware/auth.php";
+require_once "../app/config/db.php";
+require_once "../app/middleware/auth.php";
 ob_end_clean();
 
 header('Content-Type: application/json');

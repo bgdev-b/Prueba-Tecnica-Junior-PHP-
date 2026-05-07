@@ -1,6 +1,6 @@
 <?php
-require_once "config/db.php";
-require_once "middleware/auth.php";
+require_once "app/config/db.php";
+require_once "app/middleware/auth.php";
 
 $user_id   = $_SESSION['user_id'];
 $user_name = $_SESSION['user_name'];
@@ -28,7 +28,7 @@ $tasks = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     <title>My Tasks</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="dashboard-body">
@@ -112,7 +112,7 @@ $tasks = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js?v=<?= filemtime(__DIR__ . '/script.js') ?>"></script>
+    <script src="assets/js/script.js?v=<?= filemtime(__DIR__ . '/assets/js/script.js') ?>"></script>
 </body>
 
 </html>
