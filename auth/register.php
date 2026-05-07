@@ -11,7 +11,7 @@ if (isset($_POST['register'])) {
     if (!$name || !$email || !$password) {
         $_SESSION['register_error'] = "Todos los campos son obligatorios";
         $_SESSION['active_form'] = 'register';
-        header("Location: ../index.php");
+        header("Location: /");
         exit();
     }
 
@@ -30,6 +30,6 @@ if (isset($_POST['register'])) {
         $stmt->execute();
     }
 
-    header("Location: ../index.php");
+    header("Location: /");
     exit();
 }
