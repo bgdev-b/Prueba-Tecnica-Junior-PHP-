@@ -1,18 +1,47 @@
 {
     "functions": {
-        "index.php": { "runtime": "vercel-php@0.7.2" },
-        "dashboard.php": { "runtime": "vercel-php@0.7.2" },
-        "auth/*.php": { "runtime": "vercel-php@0.7.2" },
-        "tasks/*.php": { "runtime": "vercel-php@0.7.2" }
+        "index.php": {
+            "runtime": "vercel-php@0.7.2"
+        },
+        "dashboard.php": {
+            "runtime": "vercel-php@0.7.2"
+        },
+        "auth/*.php": {
+            "runtime": "vercel-php@0.7.2"
+        },
+        "tasks/*.php": {
+            "runtime": "vercel-php@0.7.2"
+        }
     },
     "rewrites": [
-        { "source": "/dashboard", "destination": "/dashboard.php" },
-        { "source": "/auth/login", "destination": "/auth/login.php" },
-        { "source": "/auth/logout", "destination": "/auth/logout.php" },
-        { "source": "/auth/register", "destination": "/auth/register.php" },
-        { "source": "/tasks/add", "destination": "/tasks/add.php" },
-        { "source": "/tasks/delete", "destination": "/tasks/delete.php" },
-        { "source": "/tasks/toggle", "destination": "/tasks/toggle.php" }
+        {
+            "source": "/dashboard",
+            "destination": "/dashboard.php"
+        },
+        {
+            "source": "/auth/login",
+            "destination": "/auth/login.php"
+        },
+        {
+            "source": "/auth/logout",
+            "destination": "/auth/logout.php"
+        },
+        {
+            "source": "/auth/register",
+            "destination": "/auth/register.php"
+        },
+        {
+            "source": "/tasks/add",
+            "destination": "/tasks/add.php"
+        },
+        {
+            "source": "/tasks/delete",
+            "destination": "/tasks/delete.php"
+        },
+        {
+            "source": "/tasks/toggle",
+            "destination": "/tasks/toggle.php"
+        }
     ]
 }
 
