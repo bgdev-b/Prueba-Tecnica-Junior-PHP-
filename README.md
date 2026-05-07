@@ -34,12 +34,5 @@ dashboard.php            # Vista principal
 
 ## Variables de entorno
 
-Copia `.env.example` a `.env` y rellena los valores:
-
-```env
-DB_HOST=
-DB_PORT=3306
-DB_NAME=
-DB_USER=
-DB_PASSWORD=
-```
+Configurar en Vercel → **Project Settings → Environment Variables**:
+`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`
