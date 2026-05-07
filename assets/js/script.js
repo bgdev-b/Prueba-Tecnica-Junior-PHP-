@@ -23,7 +23,6 @@ function saveTasksToStorage() {
     } catch (_) { }
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', function () {
     const addBtn = document.getElementById('add-task-btn');
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!addBtn) return;
 
-    // Restore drafts
     if (taskInput && localStorage.getItem(DRAFT_TITLE_KEY)) {
         taskInput.value = localStorage.getItem(DRAFT_TITLE_KEY);
     }
@@ -40,13 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
         taskDescriptionInput.value = localStorage.getItem(DRAFT_DESC_KEY);
     }
 
-    // Persist drafts while typing
     taskInput?.addEventListener('input', () =>
         localStorage.setItem(DRAFT_TITLE_KEY, taskInput.value));
     taskDescriptionInput?.addEventListener('input', () =>
         localStorage.setItem(DRAFT_DESC_KEY, taskDescriptionInput.value));
 
-    // Save initial server-rendered task list
     saveTasksToStorage();
 
     document.querySelectorAll('#task-filters .nav-link').forEach(btn => {
