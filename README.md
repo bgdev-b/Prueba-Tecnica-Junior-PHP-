@@ -6,6 +6,13 @@ Este proyecto es una **prueba técnica** desarrollada en PHP puro como parte de 
 
 https://prueba-tecnica-junior-php.vercel.app/
 
+## Screenshots
+
+![Login](assets/screenshots/login.png)
+![Register](assets/screenshots/register.png)
+![Dashboard](assets/screenshots/dashboard.png)
+![Login validation](assets/screenshots/login-validation.png)
+
 ## Stack
 
 - PHP (sin frameworks)
