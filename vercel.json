@@ -1,85 +1,58 @@
 {
     "version": 2,
     "builds": [
-        { "src": "index.php", "use": "vercel-php@0.7.2" },
-        { "src": "dashboard.php", "use": "vercel-php@0.7.2" },
-        { "src": "auth/*.php", "use": "vercel-php@0.7.2" },
-        { "src": "tasks/*.php", "use": "vercel-php@0.7.2" }
+        {
+            "src": "index.php",
+            "use": "vercel-php@0.7.2"
+        },
+        {
+            "src": "dashboard.php",
+            "use": "vercel-php@0.7.2"
+        },
+        {
+            "src": "auth/*.php",
+            "use": "vercel-php@0.7.2"
+        },
+        {
+            "src": "tasks/*.php",
+            "use": "vercel-php@0.7.2"
+        }
     ],
     "routes": [
-        { "src": "/dashboard", "dest": "/dashboard.php" },
-        { "src": "/auth/login", "dest": "/auth/login.php" },
-        { "src": "/auth/logout", "dest": "/auth/logout.php" },
-        { "src": "/auth/register", "dest": "/auth/register.php" },
-        { "src": "/tasks/add", "dest": "/tasks/add.php" },
-        { "src": "/tasks/delete", "dest": "/tasks/delete.php" },
-        { "src": "/tasks/toggle", "dest": "/tasks/toggle.php" },
-        { "src": "/(.*)", "dest": "/index.php" }
-    ]
-}
-
-    "routes": [
         {
-            "src": "/",
+            "handle": "filesystem"
+        },
+        {
+            "src": "^/$",
             "dest": "/index.php"
         },
         {
-            "src": "/dashboard",
+            "src": "^/dashboard$",
             "dest": "/dashboard.php"
         },
         {
-            "src": "/auth/login",
+            "src": "^/auth/login$",
             "dest": "/auth/login.php"
         },
         {
-            "src": "/auth/logout",
+            "src": "^/auth/logout$",
             "dest": "/auth/logout.php"
         },
         {
-            "src": "/auth/register",
+            "src": "^/auth/register$",
             "dest": "/auth/register.php"
         },
         {
-            "src": "/tasks/add",
+            "src": "^/tasks/add$",
             "dest": "/tasks/add.php"
         },
         {
-            "src": "/tasks/delete",
+            "src": "^/tasks/delete$",
             "dest": "/tasks/delete.php"
         },
         {
-            "src": "/tasks/toggle",
+            "src": "^/tasks/toggle$",
             "dest": "/tasks/toggle.php"
         }
     ]
-}
-
-            "destination": "/auth/register.php"
-},
-{
-"source": "/tasks/add",
-"destination": "/tasks/add.php"
-},
-{
-"source": "/tasks/delete",
-"destination": "/tasks/delete.php"
-},
-{
-"source": "/tasks/toggle",
-"destination": "/tasks/toggle.php"
-}
-]
-}
-
-            "dest": "/tasks/add.php"
-},
-{
-"src": "/tasks/delete",
-"dest": "/tasks/delete.php"
-},
-{
-"src": "/tasks/toggle",
-"dest": "/tasks/toggle.php"
-}
-]
 }
